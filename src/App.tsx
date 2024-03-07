@@ -8,6 +8,7 @@ import {
   abstract,
 
 } from "./const";
+import Organization from "./Organization";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             textColor={"black"}
             titleFontSize={"text-5xl"}
           >
+            <Organization />
           </TextBox>
           {/* FIXME: TL;DR */}
           <TextBox
