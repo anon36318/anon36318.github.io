@@ -1,6 +1,6 @@
 export const bgColor = `#666b89`;
 
-export const tldr = `IDM-VTON enhances image fideltiy and detail preservation in virtual try-on task, particularly in a real-world scenario.`;
+export const tldr = `IDM-VTON enhances image fidelity and detail preservation in virtual try-on task, particularly in a real-world scenario.`;
 
 export const abstract = `This paper considers image-based virtual try-on, which renders an image of a person wearing a curated garment, given a pair of images depicting the person and the garment, respectively. 
 Previous works adapt existing exemplar-based inpainting diffusion models for virtual try-on to improve the naturalness of the generated visuals compared to other methods (e.g., GAN-based), but they fail to preserve the identity of the garments.
