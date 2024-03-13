@@ -6,15 +6,30 @@ import {
   bgColor,
   tldr,
   abstract,
-
+  pipelineImage,
+  approach,
+  inTheWild,
+  teaserImages,
+  humanImages,
+  garmentImages
 } from "./const";
 import Organization from "./Organization";
+import OneImageBox from "./OneImageBox";
+import TopImageBox from "./TopImageBox";
+import SlideSelectImageBox from "./SlideSelectImageBox";
 
 function App() {
   return (
     <>
       <WindowSizeContextProvider>
         <div className="w-screen h-screen min-w-[1400px]">
+
+          {/* FIXME: Teaser */}
+          <TopImageBox
+            images={teaserImages}
+            backgroundColor={"white"}
+            title={`A human and garment reference images are in blue and red box respectively`}
+          />
           {/* FIXME: Title, Author */}
           <TextBox
             title={
@@ -46,10 +61,41 @@ function App() {
             <Markdown text={abstract} />
           </AbstractBox>
 
+          {/* FIXME: Method */}
+          <TextBox
+            title={"Approach"}
+            backgroundColor={bgColor}
+            textColor={"white"}
+          >
+            <Markdown text={approach} />
+          </TextBox>
+          <OneImageBox image={pipelineImage} backgroundColor={"white"} />
+          
+          {/* FIXME: Qualitative Results */}
+          <TextBox
+            title={"In-the-Wild dataset"}
+            backgroundColor={bgColor}
+            textColor={"white"}
+          >
+            <Markdown text={inTheWild} />
+          </TextBox>
+          <SlideSelectImageBox humans={humanImages} garments={garmentImages} backgroundColor={"white"} />
+          
+          {/* FIXME: Qualitative Comparison
+          <TextBox
+            title={"Qualitative Comparisons"}
+            backgroundColor={bgColor}
+            textColor={"white"}
+          >
+            <Markdown text={inTheWild} />
+          </TextBox>
+          <SlideImageBox images={qualCmpImages} backgroundColor={"white"}/> */}
+
           <TextBox
             title={"ECCV 2024 Submission"}
             backgroundColor={bgColor}
             textColor={"white"}
+            last={true}
           />
         </div>
       </WindowSizeContextProvider>

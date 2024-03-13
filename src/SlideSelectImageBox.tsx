@@ -5,14 +5,16 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import SelectImageBox from "./SelectImageBox";
 
 
 interface Props {
-  images: { url: string }[];
+  humans: { url: string }[][];
+  garments: { url: string }[][];
   backgroundColor?: string;
 }
 
-const SlideImageBox = ({ images, backgroundColor }: Props) => {
+const SlideSelectImageBox = ({ humans, garments, backgroundColor }: Props) => {
   return (
     <>
       <div
@@ -27,9 +29,9 @@ const SlideImageBox = ({ images, backgroundColor }: Props) => {
           pagination={{ clickable: true }}
           loop={true}
         >
-          {images.map(image => (
-            <SwiperSlide key={image.url} className="text-center">
-              <img loading="lazy" src={image.url} width={1500} />
+          {humans.map((human, ind) => (
+            <SwiperSlide key={ind} className="text-center">
+              <SelectImageBox humanImages={human} garmentImages={garments[ind]} backgroundColor={"white"} ind={ind} />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -37,4 +39,4 @@ const SlideImageBox = ({ images, backgroundColor }: Props) => {
     </>
   );
 };
-export default SlideImageBox;
+export default SlideSelectImageBox;
