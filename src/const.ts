@@ -1,8 +1,8 @@
 export const bgColor = `#666b89`;
 
-export const teaserImage = "/public/teaser.jpeg"
+export const teaserImage = "/teaser.jpeg"
 
-export const pipelineImage = "/public/pipeline.jpeg"
+export const pipelineImage = "/pipeline.jpeg"
 
 export const humanImages = [
     [
