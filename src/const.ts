@@ -112,8 +112,17 @@ and we use the first half (i.e., that from TryonNet) of the output. Then we fuse
 with features from text encoder and IP-Adapter by cross-attention layer.
 We fine-tune the TryonNet and the IP-Adapter modules, and freeze other components.`
 
-export const qual = `Qualitative results of VITON-hd and DressCode datasets. IDM-VTON enables generating high-fidelity images with identifying fine details of the garment. 
+export const qual = `Qualitative results of VITON-HD and DressCode datasets. IDM-VTON enables generating high-fidelity images with identifying fine details of the garment. 
 Multiple people are wearing same garment showing the consistency in the garment details.`
 
-export const inTheWild = `Qualitative results of virtual try-on in the wild. IDM-VTON generates images with a high degree of garment consistency in the real-world scenario. 
+export const inTheWild = `**Virtual Try-on in the wild:**
+To enable virtual try-on in the wild (i.e., real-world scenario), we collect images of garment and mutiple images of person wearing each garment from the Internet and social media platforms.
+\n\n&nbsp;\n\n
+**Customization:**
+We further fine-tune TryonNet with a pair of garment and person images via our proposed customization method. Details are illustrated in the paper.
+\n\n&nbsp;\n\n
+IDM-VTON generates images with a high degree of garment consistency in the real-world scenario. 
 Even with the complex backgrounds or diverse poses of the person, it is possible to generate high quality images.`
+
+export const qualCmp = `Qualitative comparisons on three different datasets. 
+While prior works struggles in achieving both high fidelity and detail perservation, IDM-VTON generates authentic images and preserve fine-grained details of garment.`

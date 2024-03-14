@@ -14,7 +14,8 @@ import {
   garmentImages,
   qualCmpImages,
   qualImages,
-  qual
+  qual,
+  qualCmp
 } from "./const";
 import Organization from "./Organization";
 import OneImageBox from "./OneImageBox";
@@ -101,7 +102,7 @@ function App() {
             backgroundColor={bgColor}
             textColor={"white"}
           >
-            <Markdown text={inTheWild} />
+            <Markdown text={qualCmp} />
           </TextBox>
           <SlideImageBox images={qualCmpImages} backgroundColor={"white"}/>
 
