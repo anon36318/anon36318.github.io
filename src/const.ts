@@ -12,10 +12,14 @@ export const teaserImages = [
 export const pipelineImage = "/pipeline.jpeg"
 
 export const qualImages = [
-    { url: "/qual_vitonhd/0.png" },
-    { url: "/qual_vitonhd/1.png" },
-    { url: "/qual_vitonhd/2.png" },
-    { url: "/qual_vitonhd/3.png" }
+    { url: "/qual/0.png" },
+    { url: "/qual/1.png" },
+    { url: "/qual/2.png" },
+    { url: "/qual/3.png" },
+    { url: "/qual/4.png" },
+    { url: "/qual/5.png" },
+    { url: "/qual/6.png" },
+    { url: "/qual/7.png" }
 ];
 
 export const humanImages = [

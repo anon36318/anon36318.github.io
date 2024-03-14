@@ -33,7 +33,7 @@ function App() {
           <TopImageBox
             images={teaserImages}
             backgroundColor={"white"}
-            title={`Human: blue, Garment: red`}
+            title={`Reference images are in colored boxes (blue: human, red: garment)`}
           />
           {/* FIXME: Title, Author */}
           <TextBox
