@@ -11,12 +11,14 @@ import {
   inTheWild,
   teaserImages,
   humanImages,
-  garmentImages
+  garmentImages,
+  qualCmpImages
 } from "./const";
 import Organization from "./Organization";
 import OneImageBox from "./OneImageBox";
 import TopImageBox from "./TopImageBox";
 import SlideSelectImageBox from "./SlideSelectImageBox";
+import SlideImageBox from "./SlideImageBox";
 
 function App() {
   return (
@@ -28,7 +30,7 @@ function App() {
           <TopImageBox
             images={teaserImages}
             backgroundColor={"white"}
-            title={`A human and garment reference images are in blue and red box respectively`}
+            title={`Human: blue, Garment: red`}
           />
           {/* FIXME: Title, Author */}
           <TextBox
@@ -70,18 +72,38 @@ function App() {
             <Markdown text={approach} />
           </TextBox>
           <OneImageBox image={pipelineImage} backgroundColor={"white"} />
+
+          {/* FIXME: Qualitative Comparison */}
+          <TextBox
+            title={"Results on Public Datasets"}
+            backgroundColor={bgColor}
+            textColor={"white"}
+          >
+            <Markdown text={inTheWild} />
+          </TextBox>
+          <SlideImageBox images={qualCmpImages} backgroundColor={"white"}/>
           
           {/* FIXME: Qualitative Results */}
           <TextBox
-            title={"In-the-Wild dataset"}
+            title={"Virtual Try-on in the Wild"}
             backgroundColor={bgColor}
             textColor={"white"}
           >
             <Markdown text={inTheWild} />
           </TextBox>
           <SlideSelectImageBox humans={humanImages} garments={garmentImages} backgroundColor={"white"} />
-          
-          {/* FIXME: Qualitative Comparison
+
+          {/* FIXME: Qualitative Results */}
+          <TextBox
+            title={"Virtual Try-on in the Wild"}
+            backgroundColor={bgColor}
+            textColor={"white"}
+          >
+            <Markdown text={inTheWild} />
+          </TextBox>
+          <SlideSelectImageBox humans={humanImages} garments={garmentImages} backgroundColor={"white"} />
+
+          {/* FIXME: Qualitative Comparison */}
           <TextBox
             title={"Qualitative Comparisons"}
             backgroundColor={bgColor}
@@ -89,7 +111,7 @@ function App() {
           >
             <Markdown text={inTheWild} />
           </TextBox>
-          <SlideImageBox images={qualCmpImages} backgroundColor={"white"}/> */}
+          <SlideImageBox images={qualCmpImages} backgroundColor={"white"}/>
 
           <TextBox
             title={"ECCV 2024 Submission"}

@@ -45,7 +45,7 @@ const SelectImageBox = ({
       >
         {title}
       </div>
-      <div className="flex flex-col m-0 px-28 py-14">
+      <div className="flex flex-col m-0 px-28">
         <div className="flex">
           <div className="mx-2 w-[100px]"></div>
           <div>
