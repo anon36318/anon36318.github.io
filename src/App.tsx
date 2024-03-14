@@ -12,7 +12,9 @@ import {
   teaserImages,
   humanImages,
   garmentImages,
-  qualCmpImages
+  qualCmpImages,
+  qualImages,
+  qual
 } from "./const";
 import Organization from "./Organization";
 import OneImageBox from "./OneImageBox";
@@ -75,24 +77,14 @@ function App() {
 
           {/* FIXME: Qualitative Comparison */}
           <TextBox
-            title={"Results on Public Datasets"}
+            title={"Multiple People on Same Garment"}
             backgroundColor={bgColor}
             textColor={"white"}
           >
-            <Markdown text={inTheWild} />
+            <Markdown text={qual} />
           </TextBox>
-          <SlideImageBox images={qualCmpImages} backgroundColor={"white"}/>
+          <SlideImageBox images={qualImages} backgroundColor={"white"}/>
           
-          {/* FIXME: Qualitative Results */}
-          <TextBox
-            title={"Virtual Try-on in the Wild"}
-            backgroundColor={bgColor}
-            textColor={"white"}
-          >
-            <Markdown text={inTheWild} />
-          </TextBox>
-          <SlideSelectImageBox humans={humanImages} garments={garmentImages} backgroundColor={"white"} />
-
           {/* FIXME: Qualitative Results */}
           <TextBox
             title={"Virtual Try-on in the Wild"}

@@ -1,6 +1,22 @@
 export const bgColor = `#666b89`;
 
+export const teaserImages = [
+    { url: "/teaser/0.jpeg" },
+    { url: "/teaser/1.jpeg" },
+    { url: "/teaser/2.jpeg" },
+    { url: "/teaser/3.jpeg" },
+    { url: "/teaser/4.jpeg" },
+    { url: "/teaser/5.jpeg" }
+];
+
 export const pipelineImage = "/pipeline.jpeg"
+
+export const qualImages = [
+    { url: "/qual_vitonhd/0.png" },
+    { url: "/qual_vitonhd/1.png" },
+    { url: "/qual_vitonhd/2.png" },
+    { url: "/qual_vitonhd/3.png" }
+];
 
 export const humanImages = [
     [
@@ -33,7 +49,7 @@ export const humanImages = [
         { url: "/inthewild/4/h/2.jpeg" },
         { url: "/inthewild/4/h/3.jpeg" }
     ]
-]
+];
 
 export const garmentImages = [
     [
@@ -66,21 +82,12 @@ export const garmentImages = [
         { url: "/inthewild/4/c3/c3.jpeg" },
         { url: "/inthewild/4/c4/c4.jpeg" }
     ]
-]
-
-export const teaserImages = [
-    { url: "/teaser/0.jpeg" },
-    { url: "/teaser/1.jpeg" },
-    { url: "/teaser/2.jpeg" },
-    { url: "/teaser/3.jpeg" },
-    { url: "/teaser/4.jpeg" },
-    { url: "/teaser/5.jpeg" }
-]
+];
 
 export const qualCmpImages = [
     { url: "/qualcmp/viton.jpeg" },
     { url: "/qualcmp/inthewild.jpeg" }
-]
+];
 
 export const tldr = `IDM-VTON enhances image fidelity and detail preservation in virtual try-on task, particularly in a real-world scenario.`;
 
@@ -105,5 +112,8 @@ and we use the first half (i.e., that from TryonNet) of the output. Then we fuse
 with features from text encoder and IP-Adapter by cross-attention layer.
 We fine-tune the TryonNet and the IP-Adapter modules, and freeze other components.`
 
+export const qual = `Qualitative results of VITON-hd and DressCode datasets. IDM-VTON enables generating high-fidelity images with identifying fine details of the garment. 
+Multiple people are wearing same garment showing the consistency in the garment details.`
 
-export const inTheWild = `We provide qualitative results of In-the-Wild dataset, showcasing the superior performance of IDM-VTON on practical scenario.`
+export const inTheWild = `Qualitative results of virtual try-on in the wild. IDM-VTON generates images with a high degree of garment consistency in the real-world scenario. 
+Even with the complex backgrounds or diverse poses of the person, it is possible to generate high quality images.`
