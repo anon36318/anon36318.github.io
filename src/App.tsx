@@ -15,7 +15,8 @@ import {
   qualCmpImages,
   qualImages,
   qual,
-  qualCmp
+  qualCmp,
+  license
 } from "./const";
 import Organization from "./Organization";
 import OneImageBox from "./OneImageBox";
@@ -111,7 +112,9 @@ function App() {
             backgroundColor={bgColor}
             textColor={"white"}
             last={true}
-          />
+          >
+            <Markdown text={license} />
+          </TextBox>
         </div>
       </WindowSizeContextProvider>
     </>

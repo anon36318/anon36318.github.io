@@ -1,4 +1,5 @@
 import Author from "./Author";
+import PDFBtn from "./PDFBtn";
 import { AuthorInfo } from "./types";
 
 const authors: AuthorInfo[] = [
@@ -12,6 +13,9 @@ const Organization = () => {
     <div className="flex flex-col justify-center items-center">
       <div>
         <Author authors={authors} />
+      </div>
+      <div>
+        <PDFBtn placeholder="Paper" />
       </div>
     </div>
   );

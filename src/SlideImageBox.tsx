@@ -16,7 +16,7 @@ const SlideImageBox = ({ images, backgroundColor }: Props) => {
   return (
     <>
       <div
-        className="flex justify-center items-center relative pt-10px"
+        className="flex justify-center items-center relative pt-10px pb-20px"
         style={{ backgroundColor: backgroundColor }}
       >
         <Swiper
@@ -29,7 +29,7 @@ const SlideImageBox = ({ images, backgroundColor }: Props) => {
         >
           {images.map(image => (
             <SwiperSlide key={image.url} className="text-center">
-              <img loading="lazy" src={image.url} width={1500} />
+              <img loading="lazy" src={image.url} width={1200} />
             </SwiperSlide>
           ))}
         </Swiper>

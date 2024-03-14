@@ -89,8 +89,10 @@ export const garmentImages = [
 ];
 
 export const qualCmpImages = [
-    { url: "/qualcmp/viton.jpeg" },
-    { url: "/qualcmp/inthewild.jpeg" }
+    { url: "/qualcmp/0.png" },
+    { url: "/qualcmp/1.png" },
+    { url: "/qualcmp/2.png" },
+    { url: "/qualcmp/3.png" }
 ];
 
 export const tldr = `IDM-VTON enhances image fidelity and detail preservation in virtual try-on task, particularly in a real-world scenario.`;
@@ -120,7 +122,7 @@ export const qual = `Qualitative results of VITON-HD and DressCode datasets. IDM
 Multiple people are wearing same garment showing the consistency in the garment details.`
 
 export const inTheWild = `**Virtual Try-on in the wild:**
-To enable virtual try-on in the wild (i.e., real-world scenario), we collect images of garment and mutiple images of person wearing each garment from the Internet and social media platforms.
+To enable virtual try-on in the wild (i.e., real-world scenario), we collect images of garment and mutiple images of person wearing each garment from the internet and social media platforms.
 \n\n&nbsp;\n\n
 **Customization:**
 We further fine-tune TryonNet with a pair of garment and person images via our proposed customization method. Details are illustrated in the paper.
@@ -129,4 +131,10 @@ IDM-VTON generates images with a high degree of garment consistency in the real-
 Even with the complex backgrounds or diverse poses of the person, it is possible to generate high quality images.`
 
 export const qualCmp = `Qualitative comparisons on three different datasets. 
-While prior works struggles in achieving both high fidelity and detail perservation, IDM-VTON generates authentic images and preserve fine-grained details of garment.`
+While prior works struggles to achieving both high fidelity and detail perservation, IDM-VTON generates authentic images and preserve fine-grained details of the garment.`
+
+export const license = `This work is intended solely for academic research and practical illustration purposes without any commercial benefits. 
+
+All models and clothing images used are from internet, social media platforms and public datasets (VITON, DressCode).
+
+All images and brands belong to their rightful owners.`

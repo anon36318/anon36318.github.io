@@ -65,7 +65,7 @@ const TopImageBox = ({ images, title, backgroundColor, textColor }: Props) => {
         onClick={handleClickImg}
         src={images[sequence].url}
         alt="representation"
-        style={{ ...rotationStyle, width: "300px", height: "400px" }}
+        style={{ ...rotationStyle, width: "360px", height: "480px" }}
           />
           <div className="text-gray-5">
           {title}
